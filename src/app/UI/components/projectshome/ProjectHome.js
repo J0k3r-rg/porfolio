@@ -7,7 +7,7 @@ export default function ProjectHome(){
     const projects = [
         {
             name : 'App Servicios Salud',
-            url : 'https://lucasivan.github.io/AppServiciosDeSalud/',
+            url : null,
             github : 'https://github.com/J0k3r-rg/AppServiciosDeSalud',
             image : spring,
             tecnologies : ['Java', 'MySQL','SpringDataJpa', 'Thymeleaft','Html','Css','Javascript']
