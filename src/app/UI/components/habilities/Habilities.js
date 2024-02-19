@@ -4,6 +4,7 @@ import * as FontAwesomeSi from 'react-icons/si';
 import * as FontAwesomeDi from 'react-icons/di';
 import {Dosis} from 'next/font/google'
 import React from "react";
+import { colors } from '../../colors';
 
 const abril = Dosis({ 
     weight: '400',
@@ -14,7 +15,6 @@ export default function Habilities() {
 
     const configIcon = {
         size : 100,
-        color : '#0e2fc0',
     }
 
     const icons = [
@@ -27,6 +27,12 @@ export default function Habilities() {
         },{
             icon : React.createElement(FontAwesomeDi.DiIntellij,configIcon),
             tittle : 'Intellij IDEA'
+        },{
+            icon : React.createElement(FontAwesomeFa.FaGithub,configIcon),
+            tittle : 'GitHub'
+        },{
+            icon : React.createElement(FontAwesomeFa.FaGit,configIcon),
+            tittle : 'Git'
         },{
             icon : React.createElement(FontAwesomeFa.FaHtml5,configIcon),
             tittle : 'Html'
@@ -73,9 +79,9 @@ export default function Habilities() {
     ];
     
     return (
-        <section className="border-2 px-12 py-12 rounded-lg shadow-[0_10px_15px_-3px_rgba(255,255,255,0.3)]">
-            <h2 className="text-center font-bold text-4xl mb-8">Mis Habilidades</h2>
-            <div className="grid lg:grid-cols-7 md:grid-cols-4 grid-cols-2 place-content-center gap-x-2 gap-y-6">
+        <section className={`border-2 px-12 py-10 rounded-lg ${colors.about_me.box_shadow.light} ${colors.about_me.box_shadow.dark}`}>
+            <h2 className={`text-center font-bold text-4xl mb-8 ${colors.tittle_section.light} ${colors.tittle_section.dark}`}>Mis Habilidades</h2>
+            <div className={`grid lg:grid-cols-7 md:grid-cols-4 grid-cols-2 place-content-center gap-x-2 gap-y-6 ${colors.habilities_icons.light} ${colors.habilities_icons.dark}`}>
                 {
                     icons.map( (icon) =>
                         <div key={icon.tittle} className="grid place-content-center m-auto">
