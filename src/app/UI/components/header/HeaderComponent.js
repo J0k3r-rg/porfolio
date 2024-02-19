@@ -7,21 +7,21 @@ export default function HeaderComponent() {
     const paths = [
         {
             path:'',
-            name : 'home'
+            name : 'inicio'
         },
         {
             path:'about',
-            name : 'about'
+            name : 'Acerca de mi'
         },{
             path:'projects',
-            name : 'projects'
+            name : 'Proyectos'
         }
     ];
 
     const path = usePathname();
 
     return(
-        <header className='w-screen bg-cyan-200 text-black py-4' >
+        <header className='w-full bg-[#7a90f0] text-zinc-950 py-4' >
             <div className='w-10/12 flex flex-row justify-between items-center m-auto'>
                 <Link href={'/'}>
                     <h2 className="uppercase font-bold text-3xl text-zinc-950">J0k3r-dev</h2>
@@ -33,8 +33,8 @@ export default function HeaderComponent() {
                         {
                             paths.map(
                                 link => 
-                                <li key={link.name} className={`font-bold rounded-lg w-36 h-12 grid place-content-center hover:scale-110 transition-all duration-300 capitalize`}> 
-                                    <Link href={`/${link.path}`}>{link.name}</Link> 
+                                <li key={link.name} className={`rounded-lg w-36 h-12 grid place-content-center hover:scale-110 transition-all duration-300 capitalize`}> 
+                                    <Link href={`/${link.path}`} className='font-bold'>{link.name}</Link> 
                                 </li>
                             )
                         }

@@ -2,12 +2,12 @@ import Image from "next/image";
 import Link from 'next/link';
 
 
-export default function CardProject({name, url, github, image}) {
+export default function CardProject({name, url, github, image,alt}) {
     return(
-        <div className="w-1/3 grid place-content-center border-2 rounded-xl">
-            <h3 className="text-center py-6 text-2xl font-bold">{name}</h3>
+        <div className="lg:w-1/3 grid place-content-center border-2 rounded-xl shadow-[-5px_5px_15px_-3px_rgba(255,255,255,0.3)]">
+            <h3 className="text-center py-6 text-2xl">{name}</h3>
             <div className="p-2">
-                <Image src={image} />
+                <Image src={image} alt={alt}/>
             </div>
             <div className="flex flex-col px-2 py-8">
                 <Link href={github} target="_blank">Repositorio de GitHub</Link>

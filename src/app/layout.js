@@ -1,9 +1,12 @@
-import { Fredoka } from "next/font/google";
+import { Dosis, DM_Serif_Display, Abril_Fatface } from "next/font/google";
 import "./globals.css";
 import HeaderComponent from "./UI/components/header/HeaderComponent";
 import FooterComponent from "./UI/components/footer/FooterComponent";
 
-const inter = Fredoka({ subsets: ["latin"] });
+const inter = DM_Serif_Display({ 
+  weight: '400',
+  subsets: ["latin"] 
+});
 
 export const metadata = {
   title: "j0k3r-dev",
