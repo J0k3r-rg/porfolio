@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from 'next/link';
+import { colors } from "../../colors";
 
 
 export default function CardProject({name, url, github, image,alt}) {
     return(
-        <div className="lg:w-1/3 grid place-content-center border-2 rounded-xl shadow-[-5px_5px_15px_-3px_rgba(255,255,255,0.3)]">
-            <h3 className="text-center py-6 text-2xl">{name}</h3>
+        <div className={`lg:w-1/3 grid place-content-center border-2 rounded-xl ${colors.card_component.box_shadow.light} ${colors.card_component.box_shadow.dark} ${colors.card_component.text.dark} ${colors.card_component.text.light}`}>
+            <h3 className="text-center py-6 text-2xl font-bold">{name}</h3>
             <div className="p-2">
                 <Image src={image} alt={alt}/>
             </div>
