@@ -36,7 +36,7 @@ export default function AboutMe() {
             </div>
             <div className={`flex flex-row gap-5 justify-center pt-5 ${colors.icons_about_component.light} ${colors.icons_about_component.dark}`}>
                 {
-                    redes.map(icon => <Link href={icon.link}>{icon.icon}</Link>)
+                    redes.map(icon => <Link href={icon.link} key={icon.link}>{icon.icon}</Link>)
                 }
             </div>
         </section>
