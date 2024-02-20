@@ -11,7 +11,7 @@ export default function CardCourse({ element }) {
     const [lupa, setLupa] = useState(false)
 
     return (
-        <li className="mb-4">
+        <li className="mb-4 px-2 py-10 border border-black dark:border-gray-100 rounded-2xl">
             <div 
                 className={`${show && 'w-screen h-screen fixed z-10 top-0 left-0 bg-[rgba(0,0,0,0.5)]'}`}
                 onClick={() => setShow(!show)}
