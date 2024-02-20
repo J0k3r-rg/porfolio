@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 import { IoMdSettings } from "react-icons/io";
-import { colors } from "../../colors";
 
 export default function Configs() {
 
@@ -43,11 +42,11 @@ export default function Configs() {
                     <button onClick={changeTheme} className={`${theme === 'dark' ? 'ml-10' : 'ml-0'} transition-all`}>
                         {theme === 'dark' ?
                             <MdDarkMode size={32}
-                                className={`bg-gray-200 rounded-full ${colors.icon_change_theme.dark} ${colors.icon_change_theme.light}`}
+                                className={`bg-gray-600 text-gray-200 rounded-full`}
                             />
                             :
                             <MdLightMode size={32}
-                                className={`bg-gray-200 rounded-full ${colors.icon_change_theme.dark} ${colors.icon_change_theme.light}`}
+                                className={`bg-gray-200 text-gray-700 rounded-full`}
                             />
                         }
                     </button>

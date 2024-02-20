@@ -51,5 +51,14 @@ export const colors = {
     footer : {
         light : 'text-[#000]',
         dark : 'dark:text-[#fff]'
+    },
+    about_page : {
+        h2 : 'text-[#000] dark:text-[#fff]',
+        h3 : 'text-[#000] dark:text-[#fff]',
+        p : 'text-[#000] dark:text-[#fff]' ,
+        li : 'text-[#000] dark:text-[#fff]' ,
+    },
+    projects_page : {
+
     }
 }

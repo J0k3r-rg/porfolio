@@ -18,7 +18,7 @@ export default function HeaderComponent() {
         },
         {
             path: 'about',
-            name: 'Acerca de mi'
+            name: 'Acerca de mí'
         }, {
             path: 'projects',
             name: 'Proyectos'

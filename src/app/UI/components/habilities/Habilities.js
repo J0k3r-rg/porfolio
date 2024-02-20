@@ -19,8 +19,8 @@ export default function Habilities() {
 
     const icons = [
         {
-            icon : React.createElement(FontAwesomeTb.TbBrandVisualStudio,configIcon),
-            tittle : 'Visual Studio Code'
+            icon : React.createElement(FontAwesomeSi.SiVisualstudiocode,configIcon),
+            tittle : 'VS Code'
         },{
             icon : React.createElement(FontAwesomeTb.TbBrandNetbeans,configIcon),
             tittle : 'NetBeans'
