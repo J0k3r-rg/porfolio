@@ -6,6 +6,11 @@ import iap from '@/app/UI/assets/iap.png';
 import fronted from '@/app/UI/assets/fronted.png';
 import fullstack from '@/app/UI/assets/fullstack.png';
 import spring from '@/app/UI/assets/spring.png';
+import git from '@/app/UI/assets/git.png';
+import python from '@/app/UI/assets/python.png';
+import conceptPython from '@/app/UI/assets/conceptpython.png';
+import profpython from '@/app/UI/assets/profpython.png';
+import profreact from '@/app/UI/assets/profreact.png';
 import CardCourse from "../UI/components/cardCourse/CardCourse";
 
 
@@ -51,6 +56,26 @@ const certificaciones = [
     },{
         titulo : 'Proyecto Integrador Sping',
         image : spring,
+        lugar : ''
+    },{
+        titulo : 'Git de Noob a Pro',
+        image : git,
+        lugar : ''
+    },{
+        titulo : 'Aprende a programar con Python',
+        image : python,
+        lugar : ''
+    },{
+        titulo : 'Conceptos basicos de python',
+        image : conceptPython,
+        lugar : ''
+    },{
+        titulo : 'Curso profesional de python',
+        image : profpython,
+        lugar : ''
+    },{
+        titulo : 'Curso profesional de react',
+        image : profreact,
         lugar : ''
     },
 ]
