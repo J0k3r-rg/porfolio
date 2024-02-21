@@ -1,84 +1,8 @@
 import { colors } from "../UI/colors";
-import backend2 from '@/app/UI/assets/backend2.png';
-import backend1 from '@/app/UI/assets/backend1.png';
-import pwd0 from '@/app/UI/assets/pwd0.png';
-import iap from '@/app/UI/assets/iap.png';
-import fronted from '@/app/UI/assets/fronted.png';
-import fullstack from '@/app/UI/assets/fullstack.png';
-import spring from '@/app/UI/assets/spring.png';
-import git from '@/app/UI/assets/git.png';
-import python from '@/app/UI/assets/python.png';
-import conceptPython from '@/app/UI/assets/conceptpython.png';
-import profpython from '@/app/UI/assets/profpython.png';
-import profreact from '@/app/UI/assets/profreact.png';
+import { certificates } from "../UI/certificates";
 import CardCourse from "../UI/components/cardCourse/CardCourse";
+import { en_progreso, espectativas, mas_sobre_mi } from "../UI/data";
 
-
-const mas_sobre_mi = [
-    'Soy Programador full stack en Java con el framework Spring, Mysql y React, pero me estoy dedicando mas a la construccion de API Rest con Spring y aumentando mis conocimientos con la arquitectura de microservicios.',
-    'Mi preferencia es el "BACKEND" pero tambien tengo buenos conocimientos en el fronted con html5, css3 y JavaScript. Ademas de conocer las librerias como React y Nexjs, conociendo las ventajas de cada una de ellas y el manejador de paquetes npm.',
-    'Actualmente me encuentro desarrollando aplicaciones monoliticas mediante API Rest, en la cual utilizo como backend el framework de Spring de Java(17) y consumiendo dicho backend con Nextjs 14.',
-]
-
-const espectativas = [
-    'Desempeniarme de manera eficaz en mi rol',
-    'Enfocarme en el Backend',
-    'Adquirir continuamente conocimientos'
-]
-
-const configsImage = 'rounded-2xl w-[90%] m-auto cursor-pointer'
-
-const certificaciones = [
-    {
-        titulo : 'Introduccion a la programacion',
-        image : iap,
-        lugar : ''
-    },{
-        titulo : 'Java 1: Introduccion a Java',
-        image : backend1,
-        lugar : ''
-    },{
-        titulo : 'Java 2: Backend y base de datos',
-        image : backend2,
-        lugar : ''
-    },{
-        titulo : 'Programacion web desde cero',
-        image : pwd0,
-        lugar : ''
-    },{
-        titulo : 'HTML, CSS, Javascript y React',
-        image : fronted,
-        lugar : ''
-    },{
-        titulo : 'Desarrollador Full Stack',
-        image : fullstack,
-        lugar : ''
-    },{
-        titulo : 'Proyecto Integrador Sping',
-        image : spring,
-        lugar : ''
-    },{
-        titulo : 'Git de Noob a Pro',
-        image : git,
-        lugar : ''
-    },{
-        titulo : 'Aprende a programar con Python',
-        image : python,
-        lugar : ''
-    },{
-        titulo : 'Conceptos basicos de python',
-        image : conceptPython,
-        lugar : ''
-    },{
-        titulo : 'Curso profesional de python',
-        image : profpython,
-        lugar : ''
-    },{
-        titulo : 'Curso profesional de react',
-        image : profreact,
-        lugar : ''
-    },
-]
 
 export default function About(){
 
@@ -99,6 +23,33 @@ export default function About(){
                 </div>
             </section>
 
+            <section className="">
+                <h3 className={`text-4xl mb-4 font-bold text-center ${colors.about_page.h3}`}>En progreso</h3>
+                <hr className="mb-8 bg-black dark:bg-white border-0 h-1" />
+                <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+                    {
+                        en_progreso.map( (element, index) =>
+                            <li key={index} className="border-2 border-black dark:border-white px-4 py-8 rounded-2xl grid place-content-center">
+                                <h3 className="text-xl font-bold">{element.carrera}</h3>
+                                <p className="text-lg">{element.institucion}</p>
+                            </li>
+                        )
+                    }
+                </ul>
+            </section>
+            
+            <section className="">
+                <h3 className={`text-4xl mb-4 font-bold text-center ${colors.about_page.h3}`}>Formación academica</h3>
+                <hr className="mb-8 bg-black dark:bg-white border-0 h-1" />
+                <ul className="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-y-8 gap-x-4">
+                    {
+                        certificates.map( (element, index) =>
+                            <CardCourse key={index} element={element} />
+                        )
+                    }
+                </ul>
+            </section>
+
             <section className="mb-8">
                 <h3 className={`mb-4 text-4xl font-bold text-center ${colors.about_page.h3}`}>Espectativas</h3>
                 <hr className="mb-8 bg-black dark:bg-white border-0 h-1" />
@@ -110,18 +61,7 @@ export default function About(){
                         }
                     </ul>
             </section>
-            
-            <section className="">
-                <h3 className={`text-4xl mb-4 font-bold text-center ${colors.about_page.h3}`}>Formación academica</h3>
-                <hr className="mb-8 bg-black dark:bg-white border-0 h-1" />
-                <ul className="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-y-8 gap-x-4">
-                    {
-                        certificaciones.map( (element, index) =>
-                            <CardCourse key={index} element={element} />
-                        )
-                    }
-                </ul>
-            </section>
+
         </main>
     );
 }
