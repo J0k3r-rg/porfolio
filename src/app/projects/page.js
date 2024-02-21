@@ -4,7 +4,7 @@ import { all_projects } from "../UI/projects";
 export default function Projects(){
     return(
         <main className="grid place-content-center w-10/12 m-auto">
-            <h1 className="text-center text-4xl uppercase py-10">Proyectos</h1>
+            <h1 className="text-center text-4xl uppercase py-10 text-black dark:text-white">Proyectos</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {
                     all_projects.map( ({name,url,github,image,alt}) => 

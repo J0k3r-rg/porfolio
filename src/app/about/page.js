@@ -29,7 +29,7 @@ export default function About(){
                 <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
                     {
                         en_progreso.map( (element, index) =>
-                            <li key={index} className="border-2 border-black dark:border-white px-4 py-8 rounded-2xl grid place-content-center">
+                            <li key={index} className="border-2 text-black dark:text-white border-black dark:border-white px-4 py-8 rounded-2xl grid place-content-center">
                                 <h3 className="text-xl font-bold">{element.carrera}</h3>
                                 <p className="text-lg">{element.institucion}</p>
                             </li>

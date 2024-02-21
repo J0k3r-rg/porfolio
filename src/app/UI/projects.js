@@ -2,6 +2,7 @@ import encriptador from '@/app/UI/assets/encriptador.png'
 import spring from '@/app/UI/assets/springdatajpa.png';
 import eggnews from '@/app/UI/assets/eggnews.png';
 import battlebame from '@/app/UI/assets/battlegame.png';
+import testapp from '@/app/UI/assets/testapp.png'
 
 export const all_projects = [
     {
@@ -38,6 +39,13 @@ export const all_projects = [
         github : 'https://github.com/J0k3r-rg/AppServiciosDeSalud',
         image : spring,
         alt : 'servicios salud',
+        tecnologies : ['Java', 'MySQL','SpringDataJpa', 'Thymeleaft','Html','Css','Javascript']
+    },{
+        name : 'Test App React',
+        url : 'https://test-site-joker.netlify.app/',
+        github : 'https://github.com/j0k3r-PGR/miWebPersonal',
+        image : testapp,
+        alt : 'Test App React',
         tecnologies : ['Java', 'MySQL','SpringDataJpa', 'Thymeleaft','Html','Css','Javascript']
     },
 ]
