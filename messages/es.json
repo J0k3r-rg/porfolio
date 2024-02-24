@@ -33,7 +33,12 @@
             "pd_text" : "Cuento con 2 repositorios de GitHub"
         },
         "habilities_section" : "Mis Habilidades",
-        "projects_section" : "Mis Proyectos"
+        "projects_section" : {
+            "tittle" : "Mis Proyectos",
+            "more" : "Ver mas proyectos...",
+            "github" : "Repositorio de GitHub",
+            "url" : "Click para ir a la pagina"
+        }
     },
     "about_page" : {
         

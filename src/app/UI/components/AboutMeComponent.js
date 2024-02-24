@@ -50,7 +50,7 @@ export default function AboutMe({about_me_texts,locale}) {
             </p>
             <div className={`flex flex-row gap-5 justify-center pt-5 text-gray-950 dark:text-gray-400`}>
                 {
-                    redes.map(icon => <Link href={icon.link} key={icon.link}>{icon.icon}</Link>)
+                    redes.map(icon => <Link href={icon.link} target='_blank' key={icon.link}>{icon.icon}</Link>)
                 }
             </div>
         </section>

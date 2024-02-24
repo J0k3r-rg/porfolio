@@ -25,7 +25,7 @@ export default function RootLayout({ children,params : {locale} }) {
 
   return (
     <html lang={locale} className="dark">
-      <body className={inter.className+' bg-gray-600 dark:bg-gray-950'}>
+      <body className={inter.className+' bg-gray-700 dark:bg-gray-950'}>
         <HeaderComponent links={links} locale={locale} />
         {children}
         <Configs />
