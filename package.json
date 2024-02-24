@@ -1,5 +1,5 @@
 {
-  "name": "home-page-portfolio",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "next": "14.1.0",
+    "next-intl": "^3.9.1",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.0.1"

@@ -1,0 +1,44 @@
+{
+    "configs" : {
+        "dark" : "Cambiar a Oscuro",
+        "light" : "Cambiar a Claro",
+        "lang" : "Cambiar Idioma"
+    },
+    "header" : {
+        "links" : {
+            "index" : {
+                "name" : "Home",
+                "path" : "/"
+            },
+            "about" : {
+                "name" : "About me",
+                "path" : "about"
+            },
+            "projects" : {
+                "name" : "My Projects",
+                "path" : "projects"
+            }
+        }
+    },
+    "footer" : {
+        "text" : "Portafolio Mauricio Maldonado"
+    }
+    ,
+    "home_page" : {
+        "about_me_section" : {
+            "tittle" : "About me...",
+            "text" : "Soy Programador full stack en Java con el framework Spring, Mysql y React, pero me estoy dedicando mas a la construcción de API Rest con Spring y aumentando mis conocimientos con la arquitectura de microservicios. Mi preferencia es el Backend pero también tengo amplio conocimiento en Frontend con HTML5, CSS3 y JavaScript. Manejo librerías como React y Nexjs, conociendo las ventajas de cada una de ellas, y el manejador de paquetes NPM. Actualmente me encuentro desarrollando aplicaciones monolíticas mediante API Rest, utilizando como backend el framework Spring de Java (17) y consumiendo dicho backend con Nextjs 14. ",
+            "more" : "show more...",
+            "pd" : "PD:",
+            "pd_text" : "Cuento con 2 repositorios de GitHub"
+        },
+        "habilities_section" : "Mis Habilidades",
+        "projects_section" : "Mis Proyectos"
+    },
+    "about_page" : {
+        
+    },
+    "projects_page" : {
+
+    }
+}
