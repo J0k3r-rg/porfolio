@@ -6,7 +6,7 @@ export default function ProjectHome({locale, projects_home_texts}){
     const projects = all_projects.slice(0,3)
     return(
         <section  className={`border-2 px-12 py-20 rounded-lg`}>
-            <h2  className={`text-center text-4xl mb-4 font-bold `}>
+            <h2  className={`text-center text-4xl mb-4 font-bold text-gray-950 dark:text-gray-300`}>
                 {projects_home_texts.tittle}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
