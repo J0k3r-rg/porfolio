@@ -3,6 +3,7 @@ import "@/app/UI/globals.css";
 import { useTranslations } from 'next-intl';
 import HeaderComponent from "../UI/components/HeaderComponent";
 import Configs from "../UI/components/configs/Configs";
+import FooterComponent from "../UI/components/FooterComponent";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +30,7 @@ export default function RootLayout({ children,params : {locale} }) {
         <HeaderComponent links={links} locale={locale} />
         {children}
         <Configs />
+        <FooterComponent />
       </body>
     </html>
   );
