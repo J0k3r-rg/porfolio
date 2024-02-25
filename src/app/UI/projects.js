@@ -31,20 +31,23 @@ export const all_projects = [
         tecnologies : ['Java', 'MySQL','SpringDataJpa', 'Thymeleaft','Html','Css','Javascript']
     },{
         name_es : 'Ejemplo Spring Data JPA',
+        name_en : "Example for Spring Data JPA",
         url : null,
         github : 'https://github.com/J0k3r-rg/springdatajpa',
         image : spring,
         alt : 'spring data jpa',
         tecnologies : ['Java', 'MySQL','SpringDataJpa', 'Thymeleaft','Html','Css','Javascript']
     },{
-        name_es : 'App Servicios Salud',
+        name_es : 'Aplicacion para solicitar turnos medicos',
+        name_en : "App Services Medic",
         url : null,
         github : 'https://github.com/J0k3r-rg/AppServiciosDeSalud',
         image : spring,
         alt : 'servicios salud',
         tecnologies : ['Java', 'MySQL','SpringDataJpa', 'Thymeleaft','Html','Css','Javascript']
     },{
-        name_es : 'Test App React',
+        name_es : 'Prueba con aplicacion de react',
+        name_en : "Test React App",
         url : 'https://test-site-joker.netlify.app/',
         github : 'https://github.com/j0k3r-PGR/miWebPersonal',
         image : testapp,
