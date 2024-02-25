@@ -31,7 +31,7 @@ const redes = [
 
 export default function AboutMe({about_me_texts,locale}) {
     return (
-        <section className={`border-2 px-12 py-10 rounded-lg flex flex-col bg-transparent dark:bg-transparent`}>
+        <section className={`border-2 border-cyan-800 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] dark:border-cyan-300 dark:shadow-[0_35px_60px_-15px_rgba(255,255,255,0.3)] px-12 py-10 rounded-lg flex flex-col bg-transparent dark:bg-transparent`}>
             <h2 className={`text-center text-4xl font-bold text-gray-950 dark:text-gray-300 mb-6`}>{about_me_texts.tittle}</h2>
             <div className={`flex flex-col md:flex-row justify-center items-center gap-6  ${dosis.className}`}>
                 <Image src={avatar} alt="avatar" className={`rounded-full `} width={250} />
@@ -42,17 +42,17 @@ export default function AboutMe({about_me_texts,locale}) {
                     </Link> 
                 </p>
             </div>  
+            <div className={`flex flex-row gap-5 justify-center pt-5 text-gray-950 dark:text-gray-400`}>
+                {
+                    redes.map(icon => <Link href={icon.link} target='_blank' key={icon.link}>{icon.icon}</Link>)
+                }
+            </div>
             <p className="text-center mt-4 text-gray-950 dark:text-gray-500">
                 <span className="font-bold">
                     {about_me_texts.pd} 
                 </span>
                 {about_me_texts.pd_text}
             </p>
-            <div className={`flex flex-row gap-5 justify-center pt-5 text-gray-950 dark:text-gray-400`}>
-                {
-                    redes.map(icon => <Link href={icon.link} target='_blank' key={icon.link}>{icon.icon}</Link>)
-                }
-            </div>
         </section>
     )
 }

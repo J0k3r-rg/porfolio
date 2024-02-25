@@ -5,8 +5,8 @@ import { all_projects } from "@/app/UI/projects";
 export default function ProjectHome({locale, projects_home_texts}){
     const projects = all_projects.slice(0,3)
     return(
-        <section  className={`border-2 px-12 py-20 rounded-lg`}>
-            <h2  className={`text-center text-4xl mb-4 font-bold text-gray-950 dark:text-gray-300`}>
+        <section  className={`border-2 px-12 py-20 rounded-lg border-cyan-800 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] dark:border-cyan-300 dark:shadow-[0_35px_60px_-15px_rgba(255,255,255,0.3)]`}>
+            <h2  className={`text-center text-4xl mb-4 font-bold text-gray-950 dark:text-gray-300 uppercase`}>
                 {projects_home_texts.tittle}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

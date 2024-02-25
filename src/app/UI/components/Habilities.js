@@ -78,7 +78,7 @@ export default function Habilities({habilities_texts}) {
     ];
     
     return (
-        <section className={`border-2 px-12 py-10 rounded-lg `}>
+        <section className={`border-2 px-12 py-10 rounded-lg border-cyan-800 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] dark:border-cyan-300 dark:shadow-[0_35px_60px_-15px_rgba(255,255,255,0.3)]`}>
             <h2 className={`text-center font-bold text-4xl mb-8 text-gray-950 dark:text-gray-300 uppercase`}>
                 {habilities_texts.tittle}
             </h2>

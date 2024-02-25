@@ -13,7 +13,7 @@ export default function HeaderComponent({ links, locale }) {
     const path = usePathname();
 
     return (
-        <header className={`w-full py-4 bg-slate-500 dark:bg-slate-900`} >
+        <header className={`w-full py-4 bg-cyan-600 dark:bg-slate-900`} >
             <div className='w-10/12 flex flex-row justify-between items-center m-auto'>
                 <Link href={'/'} className='flex flex-row items-center text-gray-950 dark:text-gray-300'>
                     <GiCardJoker size={50} />
@@ -37,7 +37,7 @@ export default function HeaderComponent({ links, locale }) {
                     <GiHamburgerMenu size={32} />
                 </div>
             </div>
-            <div className={`w-[280px] h-[100vh] bg-slate-500 dark:bg-slate-900 fixed ${showMenu ? 'right-0' : '-right-[280px]'} top-0 transition-all duration-300`}>
+            <div className={`w-[280px] h-[100vh] bg-cyan-600 dark:bg-slate-900 fixed ${showMenu ? 'right-0' : '-right-[280px]'} top-0 transition-all duration-300`}>
                 <div className='absolute top-5 right-5 text-2xl cursor-pointer p-2 border-2 rounded-lg border-gray-950 dark:border-gray-300' onClick={() => setShowMenu(!showMenu)}>X</div>
                 <nav className='grid place-content-center mt-[50%]'>
                     <ul className='flex flex-col'>
