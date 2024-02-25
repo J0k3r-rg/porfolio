@@ -20,7 +20,7 @@ export default function CardCourse({ element , locale}) {
             <div className={`${!show && 'relative'}`}>
                 <Image 
                     src={element.image} 
-                    alt={element.titulo} 
+                    alt={element.alt} 
                     className={`rounded-2xl  ${!show && ''} ${(lupa && !show) && 'brightness-[15%]'} z-10 m-auto cursor-pointer ${show && 'fixed w-[90%] md:w-[80%] lg:w-[65%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'} transition-all duration-500`} 
                     onClick={() => setShow(!show)}
                     onMouseEnter={() => setLupa(true)}

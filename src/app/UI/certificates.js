@@ -16,61 +16,73 @@ export const certificates = [
         tittle_es : 'Introduccion a la programacion',
         tittle_en : '',
         image : iap,
-        lugar : ''
+        lugar : '',
+        alt : '1'
     },{
         tittle_es : 'Java 1: Introduccion a Java',
         tittle_en : '',
         image : backend1,
-        lugar : ''
+        lugar : '',
+        alt : '2'
     },{
         tittle_es : 'Java 2: Backend y base de datos',
         tittle_en : '',
         image : backend2,
-        lugar : ''
+        lugar : '',
+        alt : '3'
     },{
         tittle_es : 'Programacion web desde cero',
         tittle_en : '',
         image : pwd0,
-        lugar : ''
+        lugar : '',
+        alt : '4'
     },{
         tittle_es : 'HTML, CSS, Javascript y React',
         tittle_en : '',
         image : fronted,
-        lugar : ''
+        lugar : '',
+        alt : '5'
     },{
         tittle_es : 'Desarrollador Full Stack',
         tittle_en : '',
         image : fullstack,
-        lugar : ''
+        lugar : '',
+        alt : '6'
     },{
         tittle_es : 'Proyecto Integrador Sping',
         tittle_en : '',
         image : spring,
-        lugar : ''
+        lugar : '',
+        alt : '7'
     },{
         tittle_es : 'Git de Noob a Pro',
         tittle_en : '',
         image : git,
-        lugar : ''
+        lugar : '',
+        alt : '8'
     },{
         tittle_es : 'Aprende a programar con Python',
         tittle_en : '',
         image : python,
-        lugar : ''
+        lugar : '',
+        alt : '9'
     },{
         tittle_es : 'Conceptos basicos de python',
         tittle_en : '',
         image : conceptPython,
-        lugar : ''
+        lugar : '',
+        alt : '10'
     },{
         tittle_es : 'Curso profesional de python',
         tittle_en : '',
         image : profpython,
-        lugar : ''
+        lugar : '',
+        alt : '11'
     },{
         tittle_es : 'Curso profesional de react',
         tittle_en : '',
         image : profreact,
-        lugar : ''
+        lugar : '',
+        alt : '12'
     },
 ]
