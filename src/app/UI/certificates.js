@@ -13,51 +13,63 @@ import profreact from '@/app/UI/assets/profreact.png';
 
 export const certificates = [
     {
-        titulo : 'Introduccion a la programacion',
+        tittle_es : 'Introduccion a la programacion',
+        tittle_en : '',
         image : iap,
         lugar : ''
     },{
-        titulo : 'Java 1: Introduccion a Java',
+        tittle_es : 'Java 1: Introduccion a Java',
+        tittle_en : '',
         image : backend1,
         lugar : ''
     },{
-        titulo : 'Java 2: Backend y base de datos',
+        tittle_es : 'Java 2: Backend y base de datos',
+        tittle_en : '',
         image : backend2,
         lugar : ''
     },{
-        titulo : 'Programacion web desde cero',
+        tittle_es : 'Programacion web desde cero',
+        tittle_en : '',
         image : pwd0,
         lugar : ''
     },{
-        titulo : 'HTML, CSS, Javascript y React',
+        tittle_es : 'HTML, CSS, Javascript y React',
+        tittle_en : '',
         image : fronted,
         lugar : ''
     },{
-        titulo : 'Desarrollador Full Stack',
+        tittle_es : 'Desarrollador Full Stack',
+        tittle_en : '',
         image : fullstack,
         lugar : ''
     },{
-        titulo : 'Proyecto Integrador Sping',
+        tittle_es : 'Proyecto Integrador Sping',
+        tittle_en : '',
         image : spring,
         lugar : ''
     },{
-        titulo : 'Git de Noob a Pro',
+        tittle_es : 'Git de Noob a Pro',
+        tittle_en : '',
         image : git,
         lugar : ''
     },{
-        titulo : 'Aprende a programar con Python',
+        tittle_es : 'Aprende a programar con Python',
+        tittle_en : '',
         image : python,
         lugar : ''
     },{
-        titulo : 'Conceptos basicos de python',
+        tittle_es : 'Conceptos basicos de python',
+        tittle_en : '',
         image : conceptPython,
         lugar : ''
     },{
-        titulo : 'Curso profesional de python',
+        tittle_es : 'Curso profesional de python',
+        tittle_en : '',
         image : profpython,
         lugar : ''
     },{
-        titulo : 'Curso profesional de react',
+        tittle_es : 'Curso profesional de react',
+        tittle_en : '',
         image : profreact,
         lugar : ''
     },

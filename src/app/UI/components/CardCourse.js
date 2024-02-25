@@ -3,7 +3,7 @@ import { useState } from "react"
 import Image from 'next/image'
 import { MdZoomIn } from "react-icons/md";
 
-export default function CardCourse({ element }) {
+export default function CardCourse({ element , locale}) {
 
     const [show, setShow] = useState(false);
 
@@ -16,7 +16,7 @@ export default function CardCourse({ element }) {
                 onClick={() => setShow(!show)}
             >  
             </div>
-            <h3 className={`$ h-12 mb-4 text-center text-xl font-bold`}>{element.titulo}</h3>
+            <h3 className={`$ h-12 mb-4 text-center text-xl font-bold`}>{ locale === 'es' ? element.tittle_es : element.tittle_en}</h3>
             <div className={`${!show && 'relative'}`}>
                 <Image 
                     src={element.image} 

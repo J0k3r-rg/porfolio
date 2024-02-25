@@ -36,12 +36,41 @@
         "projects_section" : {
             "tittle" : "Mis Proyectos",
             "more" : "Ver mas proyectos...",
-            "github" : "Repositorio de GitHub",
-            "url" : "Click para ir a la pagina"
+            "github" : "GitHub",
+            "url" : "Pagina"
         }
     },
     "about_page" : {
-        
+        "tittle" : "Mas sobre mi",
+        "text_principal_a" : "Soy Programador full stack en Java con el framework Spring, Mysql y React, pero me estoy dedicando mas a la construccion de API Rest con Spring y aumentando mis conocimientos con la arquitectura de microservicios.",
+        "text_principal_b" : "Mi preferencia es el BACKEND pero tambien tengo buenos conocimientos en el fronted con html5, css3 y JavaScript. Ademas de conocer las librerias como React y Nexjs, conociendo las ventajas de cada una de ellas y el manejador de paquetes npm.",
+        "text_principal_c" : "Actualmente me encuentro desarrollando aplicaciones monoliticas mediante API Rest, en la cual utilizo como backend el framework de Spring de Java(17) y consumiendo dicho backend con Nextjs 14.",
+        "in_progress" : {
+            "tittle" : "En progreso",
+            "items" : {
+                "unpa" : {
+                    "name" : "asdasdasd",
+                    "place" : ""
+                },
+                "codo_a_codo" : {
+                    "name" : "2eqwdf",
+                    "place" : ""
+                },
+                "alura_latam" : {
+                    "name" : "12rwf",
+                    "place" : ""
+                }
+            }
+        },
+        "spectatives" : {
+            "tittle" : "Espectativas",
+            "items" : {
+                "item_one" : "Desempeniarme de manera eficaz en mi rol",
+                "item_two" : "Enfocarme en el Backend",
+                "item_three" : "Adquirir continuamente conocimientos"
+            }
+        },
+        "academy" : "Formacion academica"
     },
     "projects_page" : {
 
