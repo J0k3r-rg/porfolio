@@ -50,6 +50,8 @@ export default function Habilities() {
             icon : React.createElement(FontAwesomeSi.SiTailwindcss,configIcon),
         },{
             icon : React.createElement(FontAwesomeSi.SiMongodb,configIcon),
+        },{
+            icon : React.createElement(FontAwesomeSi.SiXampp,configIcon)
         }
     ];
     
