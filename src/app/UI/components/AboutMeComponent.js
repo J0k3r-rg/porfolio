@@ -33,7 +33,7 @@ export default function AboutMe({ about_me_texts, locale }) {
     return (
         <section className={`flex flex-row h-full w-10/12 m-auto gap-12 items-center`}>
 
-            <div className={`w-4/12`}>
+            <div className={`w-4/12 -z-50`}>
                 <Image src={avatar} className={`w-full rounded-full`} alt="avatar" />
             </div>
 
