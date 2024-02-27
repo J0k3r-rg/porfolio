@@ -10,14 +10,11 @@ export default function About(){
     const about_me_texts = {
         tittle: t(`home_page.about_me_section.tittle`),
         tittle2 : t(`home_page.about_me_section.tittle2`),
-        text: t(`home_page.about_me_section.text`),
-        more: t(`home_page.about_me_section.more`),
-        pd: t(`home_page.about_me_section.pd`),
-        pd_text: t(`home_page.about_me_section.pd_text`)
+        text: t(`home_page.about_me_section.text`)
     }
 
     return(
-        <main className="w-full grid h-[calc(100%_-_128px_-_96px)] place-content-center">
+        <main className="w-full grid lg:h-[calc(100%_-_128px_-_96px)] place-content-center">
             <AboutMe about_me_texts={about_me_texts} />
         </main>
     );

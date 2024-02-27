@@ -6,10 +6,10 @@ export default function Home() {
 
   return (
     <main className="grid place-content-center">
-      <div className={`fixed`}>
-        <Image className={`w-7/12 m-auto drop-shadow-[3px_3px_25px_rgba(0,0,255,0.6)] opacity-40`} src={logo} alt="logo" />
+      <div className={`fixed w-full h-full`}>
+        <Image className={`lg:w-7/12 w-full m-auto drop-shadow-[3px_3px_25px_rgba(0,0,255,0.6)] opacity-40`} src={logo} alt="logo" />
       </div>
-      <div className={`fixed w-full min-h-full grid place-content-center drop-shadow-[3px_3px_25px_rgba(0,0,255,0.6)] opacity-40`}>
+      <div className={`fixed w-full h-full flex items-center flex-col drop-shadow-[3px_3px_25px_rgba(0,0,255,0.6)] opacity-40`}>
         <p className={`text-center font-bold text-8xl text-white opacity-50`}>DEVELOPER FULL</p>
         <p className={`text-center font-bold text-8xl text-white opacity-50`}>STACK</p>
       </div>

@@ -18,8 +18,8 @@ export default function CarrouselProjects({ projects_texts, locale }) {
 
     return (
         <>
-            <div className={`w-[100px]`}>
-                <FaAngleLeft size={100} onClick={down} className={`text-rose-500 ${selected === 0 ? 'hidden' : 'cursor-pointer'} hover:scale-125 transition-all ease-out`} />
+            <div className={`w-12 lg:w-[100px]`}>
+                <FaAngleLeft size={50} onClick={down} className={`text-rose-500 ${selected === 0 ? 'hidden' : 'cursor-pointer'} hover:scale-125 transition-all ease-out`} />
             </div>
             <div className={`w-full h-full flex flex-row items-center justify-center relative`}>
                 {
@@ -29,8 +29,8 @@ export default function CarrouselProjects({ projects_texts, locale }) {
                     )
                 }
             </div>
-            <div>
-                <FaAngleRight size={100} onClick={up} className={`text-rose-500 ${selected === 5 ? 'hidden' : 'cursor-pointer'} hover:scale-125 transition-all ease-out`} />
+            <div className={`w-12 lg:w-[100px]`}>
+                <FaAngleRight size={50} onClick={up} className={`text-rose-500 ${selected === 5 ? 'hidden' : 'cursor-pointer'} hover:scale-125 transition-all ease-out`} />
             </div>
         </>
     )

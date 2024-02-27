@@ -7,9 +7,9 @@ export default function CardProject({ project, locale, projects_home_texts, sele
     const pos = selected + 1;
 
     return (
-        <div className={`transition-all duration-300 ease-out grid place-content-center absolute ${(index === selected) ? 'w-full z-10' : (index === ant) ? `mr-80` : (index === pos) ? `ml-80` : 'hidden'}`}>
+        <div className={`transition-all duration-300 ease-out grid place-content-center absolute ${(index === selected) ? 'w-full z-10' : (index === ant) ? `lg:mr-80` : (index === pos) ? `lg:ml-80` : 'hidden'}`}>
             <div className="relative text-transparent group transition-all duration-300 ease-in-out">
-                <div className={`w-full group-hover:text-white grid absolute ${index != selected ? 'hidden' : ''}`} >
+                <div className={`w-full hidden group-hover:text-white lg:grid absolute ${index != selected ? 'hidden' : ''}`} >
                     <div className={`w-8/12 m-auto py-6 px-5 h-80 group-hover:bg-[rgba(0,0,0,0.5)]`}>
                         <h3 className="w-8/12 m-auto text-center z-10 py-6 text-4xl font-bold px-4 rounded-xl group-hover:bg-[rgba(0,0,0,0.8)]">
                             {locale === 'es' ? project.name_es : project.name_en}
@@ -22,9 +22,16 @@ export default function CardProject({ project, locale, projects_home_texts, sele
                                 {projects_home_texts.url}
                             </Link>
                         }
+                        <div className={`hidden group-hover:flex flex-row gap-2 mt-8 justify-evenly px-4`}>
+                            {
+                                project.tecnologies.map((tecnologie, index) => 
+                                    <p key={index} className={`px-4 py-2 rounded-2xl bg-blue-800`}>{tecnologie}</p>
+                                )
+                            }
+                        </div>
                     </div>
                 </div>
-                <Image src={project.image} alt={project.alt} className='w-8/12 m-auto shadow-lg shadow-rose-400' />
+                <Image src={project.image} alt={project.alt} className='lg:w-8/12 w-full m-auto shadow-lg shadow-rose-400' />
             </div>
         </div>
     );

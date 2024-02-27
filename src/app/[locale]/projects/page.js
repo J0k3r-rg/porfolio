@@ -8,7 +8,6 @@ export default function Projects() {
     const t = useTranslations();
     const projects_texts = {
         tittle : t(`home_page.projects_section.tittle`),
-        more : t(`home_page.projects_section.more`),
         github : t(`home_page.projects_section.github`),
         url : t(`home_page.projects_section.url`),
       }
@@ -18,7 +17,7 @@ export default function Projects() {
             <h2 className={`text-4xl text-rose-400 font-bold text-center`}>
                 {projects_texts.tittle}
             </h2>
-            <div className={`w-full flex flex-row justify-between items-center h-full px-40`}>
+            <div className={`w-full flex flex-row justify-between items-center h-full lg:px-8 px-2`}>
                 
                 <CarrouselProjects projects_texts={projects_texts} locale={locale} />
                 
