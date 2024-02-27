@@ -18,9 +18,7 @@ export default function Projects() {
                 {projects_texts.tittle}
             </h2>
             <div className={`w-full flex flex-row justify-between items-center h-full lg:px-8 px-2`}>
-                
                 <CarrouselProjects projects_texts={projects_texts} locale={locale} />
-                
             </div>
         </main>
     );

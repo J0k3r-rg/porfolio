@@ -5,7 +5,6 @@ import * as FontAwesomeDi from 'react-icons/di';
 import React from "react";
 
 
-
 export default function Habilities() {
 
     const configIcon = {
@@ -55,7 +54,7 @@ export default function Habilities() {
     ];
     
     return (
-        <section className={`w-6/12`}>
+        <section className={`w-11/12 lg:w-6/12`}>
             <div 
                 className={`grid lg:grid-cols-5 md:grid-cols-4 grid-cols-4 place-content-center gap-y-6`}
                 >

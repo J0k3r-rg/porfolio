@@ -12,7 +12,7 @@ export default function HeaderComponent({ links }) {
     let path = usePathname();
 
     return (
-        <header className={`flex flex-row h-32 items-center justify-between px-9`}>
+        <header className={`flex flex-row h-32 items-center justify-between px-9 z-40`}>
 
             <hr className={`h-1 bg-white border-0 w-4/12 my-auto`} />
 
@@ -31,9 +31,9 @@ export default function HeaderComponent({ links }) {
                     }
                 </ul>
             </nav>
-            <TiThMenuOutline className={`cursor-pointer text-rose-500`} size={50} onClick={() => setShow(!show)} />
+            <TiThMenuOutline className={`cursor-pointer text-rose-500 lg:hidden`} size={50} onClick={() => setShow(!show)} />
 
-            <nav className={`lg:hidden w-80 z-50 h-full bg-[#2e2e2e] fixed top-0 ${show ? '-right-80' : 'right-0' } transition-all duration-300 ease-linear`}>
+            <nav className={`lg:hidden w-80 z-50 h-full bg-[#2e2e2e] fixed top-0 ${show ? 'right-0' : '-right-80' } transition-all duration-300 ease-linear`}>
                 <p className={`mt-5 absolute right-5 text-5xl font-bold cursor-pointer`} onClick={() => setShow(!show)}>X</p>
             <ul className={`grid place-content-center w-full h-full gap-y-6`}>
                     {
@@ -41,7 +41,7 @@ export default function HeaderComponent({ links }) {
                             (link, index) => {
                                 return (
                                     <li key={index} id={`link${index}`} className={`${path == link.path && 'border-b-4'}`}>
-                                        <Link href={`${link.path}`} className={`${index % 2 === 0 ? 'text-white' : 'text-rose-600'} font-bold text-2xl`}>{link.name}</Link>
+                                        <Link href={`${link.path}`} className={`${index % 2 === 0 ? 'text-white' : 'text-rose-600'} font-bold text-2xl`} onClick={() => setShow(!show)}>{link.name}</Link>
                                     </li>
                                 )
                             }
