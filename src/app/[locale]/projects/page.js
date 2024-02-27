@@ -1,5 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { useLocale } from "next-intl"
+import Image from 'next/image'
+import logo from '@/app/UI/assets/fondo.png'
 
 import CarrouselProjects from '@/app/UI/components/CarrouselProjects';
 
@@ -19,6 +21,9 @@ export default function Projects() {
             </h2>
             <div className={`w-full flex flex-row justify-between items-center h-full lg:px-8 px-2`}>
                 <CarrouselProjects projects_texts={projects_texts} locale={locale} />
+            </div>
+            <div className={`fixed w-full h-full top-0 grid place-content-center -z-50 lg:hidden`}>
+                <Image className={`lg:w-7/12 w-full m-auto drop-shadow-[3px_3px_25px_rgba(0,0,255,0.6)] opacity-40`} src={logo} alt="logo" />
             </div>
         </main>
     );

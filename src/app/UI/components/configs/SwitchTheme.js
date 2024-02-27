@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { MdLightMode, MdDarkMode } from "react-icons/md";
 
-export default function SwitchTheme() {
+export default function SwitchTheme({themedark, themelight}) {
     const [theme, setTheme] = useState(() => {
         if (typeof window !== 'undefined' && window.localStorage) {
             return localStorage.getItem('theme') || 'light';
@@ -25,7 +25,9 @@ export default function SwitchTheme() {
     }
     return (
         <div>
-            <h3 className="font-bold text-2xl">DarkMode</h3>
+            <h3 className="font-bold text-2xl text-center text-white mb-4">
+                {theme === 'dark' ? themelight : themedark}
+            </h3>
             <div className={`flex p-1 w-20 m-auto rounded-full bg-slate-500 border-2 border-gray-950`}>
                 <button onClick={changeTheme} className={`${theme === 'dark' ? 'ml-10' : 'ml-0'} transition-all`}>
                     {theme === 'dark' ?

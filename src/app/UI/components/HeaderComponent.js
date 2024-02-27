@@ -31,7 +31,7 @@ export default function HeaderComponent({ links }) {
                     }
                 </ul>
             </nav>
-            <TiThMenuOutline className={`cursor-pointer text-rose-500 lg:hidden`} size={50} onClick={() => setShow(!show)} />
+            <TiThMenuOutline className={`cursor-pointer shadow-sm rounded-2xl p-2 shadow-rose-400 text-rose-500 lg:hidden`} size={65} onClick={() => setShow(!show)} />
 
             <nav className={`lg:hidden w-80 z-50 h-full bg-[#2e2e2e] fixed top-0 ${show ? 'right-0' : '-right-80' } transition-all duration-300 ease-linear`}>
                 <p className={`mt-5 absolute right-5 text-5xl font-bold cursor-pointer`} onClick={() => setShow(!show)}>X</p>

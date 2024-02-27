@@ -39,11 +39,11 @@ export default function CardProject({ project, locale, projects_home_texts, sele
                 <h3 className="w-11/12 text-rose-300 m-auto text-center z-10 py-6 text-3xl font-bold px-4 rounded-xl ">
                     {locale === 'es' ? project.name_es : project.name_en}
                 </h3>
-                <Link href={project.github} target="_blank" className="w-28 m-auto mt-4 grid place-content-center py-2 rounded-lg mb-3 shadow-[2px_2px_5px_1px_rgba(255,255,255,0.5)] bg-gray-900">
+                <Link href={project.github} target="_blank" className="text-rose-200 font-bold w-40 m-auto mt-4 grid place-content-center py-2 rounded-lg mb-3 shadow-[2px_2px_5px_1px_rgba(255,255,255,0.5)] bg-rose-900 bg-opacity-80">
                     {projects_home_texts.github}
                 </Link>
                 {
-                    project.url && <Link href={project.url} target="_blank" className="w-28 grid place-content-center m-auto py-2 rounded-lg mb-3 shadow-[2px_2px_5px_1px_rgba(255,255,255,0.5)] bg-gray-900">
+                    project.url && <Link href={project.url} target="_blank" className="text-rose-200 font-bold w-40 grid place-content-center m-auto py-2 rounded-lg mb-3 shadow-[2px_2px_5px_1px_rgba(255,255,255,0.5)] bg-rose-900 bg-opacity-80">
                         {projects_home_texts.url}
                     </Link>
                 }

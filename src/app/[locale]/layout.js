@@ -23,12 +23,18 @@ export default function RootLayout({ children,params : {locale} }) {
         }
     })
 
+    const texts_configs = {
+      themedark : t('configs.dark'),
+      themelight : t('configs.light'),
+      lang : t('configs.lang')
+    }
+
   return (
     <html lang={locale} className="dark">
       <body className={`${inter.className} bg-[#242020] w-screen h-screen`}>
         <HeaderComponent links={links} locale={locale} />
         {children}
-        <Configs />
+        <Configs texts_configs={texts_configs}/>
         <FooterComponent locale={locale} />
       </body>
     </html>

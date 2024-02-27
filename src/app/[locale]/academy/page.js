@@ -15,8 +15,8 @@ export default function page({ params : {locale} }) {
                     )
                 }
             </ul>
-            <div className={`fixed -z-40`}>
-                <Image className={`w-7/12 m-auto drop-shadow-[3px_3px_25px_rgba(0,0,255,0.6)] opacity-40`} src={logo} alt="logo" />
+            <div className={`fixed w-full h-full top-0 grid place-content-center -z-50 lg:hidden`}>
+                <Image className={`lg:w-7/12 w-full m-auto drop-shadow-[3px_3px_25px_rgba(0,0,255,0.6)] opacity-40`} src={logo} alt="logo" />
             </div>
         </main>
     )

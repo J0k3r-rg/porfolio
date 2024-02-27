@@ -10,6 +10,7 @@ export default function Home() {
         <Image className={`lg:w-7/12 w-full m-auto drop-shadow-[3px_3px_25px_rgba(0,0,255,0.6)] opacity-40`} src={logo} alt="logo" />
       </div>
       <div className={`fixed w-full h-full top-0 grid place-content-center -z-50 drop-shadow-[3px_3px_25px_rgba(0,0,255,0.6)] opacity-40`}>
+        <p className={`text-center font-bold  text-6xl lg:text-8xl text-white opacity-50`}>JOKER-DEV</p>
         <p className={`text-center font-bold  text-6xl lg:text-8xl text-white opacity-50`}>DEVELOPER FULL</p>
         <p className={`text-center font-bold  text-6xl lg:text-8xl text-white opacity-50`}>STACK</p>
       </div>
