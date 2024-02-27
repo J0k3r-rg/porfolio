@@ -1,11 +1,24 @@
+'use client'
 import Image from 'next/image'
+import { useFormState } from 'react-dom'
 import { FaLinkedin, FaGithub, FaCopyright } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
-
+import ClipLoader from "react-spinners/ClipLoader";
+import { useState } from 'react'
 import logo from '@/app/UI/assets/fondo.png'
-import { sendMail } from '../lib/mail'
+import { sendMail } from '@/app/lib/mail';
 
-export default function page() {
+const initialState = {
+    message: '',
+  }
+export default function Page() {
+
+    const [state, formAction] = useFormState(sendMail, initialState)
+
+    // const [send, setSend] = useState(false)
+
+    const [sending, setSending] = useState(false)
+
 
     return (
         <main className="flex m-auto flex-col lg:h-[calc(100%_-_128px_-_96px)] w-11/12 lg:w-8/12">
@@ -15,17 +28,18 @@ export default function page() {
                     <FaLinkedin size={50} />
                     <FaGithub size={50} />
                 </div>
-                <form action={sendMail} className={`flex flex-col gap-5 w-full`}>
-                    <input type="text" name="to" placeholder={`Nombre: *`} required autocomplete="off"
+                <form action={formAction} className={`flex flex-col gap-5 w-full`}>
+                    <input type="email" name="to" placeholder={`Email: *`} required
                         className={`border-0 h-12 rounded-3xl px-6 py-2 font-bold text-2xl bg-gray-300 bg-opacity-35`}
                     />
-                    <input type="email" name="name" placeholder={`Email: *`} required autocomplete="off"
+                    <input type="text" name="name" placeholder={`Nombre: *`} required
                         className={`border-0 h-12 rounded-3xl px-6 py-2 font-bold text-2xl bg-gray-300 bg-opacity-35`}
                     />
-                    <textarea name="body" cols={30} rows={7} placeholder={`Mensaje: * `} required autocomplete="off"
+                    <textarea name="body" cols={30} rows={7} placeholder={`Mensaje: * `} required
                         className={`border-0 h-64 rounded-3xl px-6 py-4 resize-none font-bold text-2xl bg-gray-300 bg-opacity-35`}
                     ></textarea>
                     <button
+                        onClick={() => setSending(true)}
                         className={`bg-rose-500 bg-opacity-40 w-1/2 m-auto py-3 font-bold rounded-xl hover:bg-opacity-95 transition-all duration-150 ease-linear`} >
                         SEND
                     </button>
@@ -49,6 +63,24 @@ export default function page() {
                     <FaLinkedin size={25} />
                 </div>
             </div>
+            {
+                sending &&
+                <div className={`bg-black top-0 left-0 bg-opacity-30 fixed w-full h-full grid place-content-center`}>
+                    <ClipLoader
+                        size={100}
+                        color='#ffffff'
+                    />{ state?.message && setSending(false)}
+                </div>
+            }
+            {/* {
+                state?.message && !send && 
+                <div className={`bg-black top-0 left-0 bg-opacity-30 fixed w-full h-full grid place-content-center`}>
+                    <div className={`w-1/2`}>
+                        <p>mensaje</p>
+                        <button onClick={() => route.refresh()}>Salir</button>
+                    </div>
+                </div>
+            } */}
         </main>
     )
 }

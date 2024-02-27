@@ -1,6 +1,7 @@
+'use server'
 import nodemailer from 'nodemailer';
 
-export async function sendMail(formdata){
+export async function sendMail(prevState, formdata){
     'use server'
     const {SMTP_PASSWORD, SMTP_EMAIL} = process.env;
 
@@ -27,11 +28,14 @@ export async function sendMail(formdata){
         text: formdata.get('body')
       };
 
-    try{
-        const sendResult = await transport.sendMail(mailOptions)
-    } catch(error){
-        console.log(error)
-    }
-
+      try {
+        // const sendResult = await transport.sendMail(mailOptions);
+        // console.log(sendResult);
+        // Handle successful email sending, e.g., show a success message
+        return({message : 'exito'})
+      } catch (error) {
+        console.error(error);
+        // Handle email sending error, e.g., show an error message
+      }
 
 }
