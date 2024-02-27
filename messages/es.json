@@ -1,7 +1,7 @@
 {
     "configs" : {
-        "dark" : "Cambiar a Oscuro",
-        "light" : "Cambiar a Claro",
+        "dark" : "Cambiar a Dark",
+        "light" : "Cambiar a Light",
         "lang" : "Cambiar a Inglés"
     },
     "header" : {
