@@ -2,7 +2,6 @@ import { Dosis } from "next/font/google";
 import Image from "next/image";
 import avatar from '@/app/UI/assets/avatar.jpeg';
 import logo from '@/app/UI/assets/fondo.png'
-import Link from 'next/link';
 import * as IconsFa from "react-icons/fa";
 import React from "react";
 
@@ -32,7 +31,7 @@ const redes = [
 
 export default function AboutMe({ about_me_texts, locale }) {
     return (
-        <section className={`flex flex-row h-full w-10/12 m-auto gap-12`}>
+        <section className={`flex flex-row h-full w-10/12 m-auto gap-12 items-center`}>
 
             <div className={`w-4/12`}>
                 <Image src={avatar} className={`w-full rounded-full`} alt="avatar" />
@@ -42,13 +41,13 @@ export default function AboutMe({ about_me_texts, locale }) {
                 <div className={`fixed w-full`}>
                     <Image className={`w-6/12 drop-shadow-[3px_3px_25px_rgba(0,0,255,0.6)] opacity-40`} src={logo} alt="logo" />
                 </div>
-                <h2 className={`text-center text-8xl font-bold uppercase mb-4 dark:text-rose-500`}>
+                <h2 className={`text-center text-8xl font-bold uppercase mb-4 text-rose-500`}>
                     {about_me_texts.tittle}
                 </h2>
-                <h3 className={`font-bold dark:text-gray-500 opacity-70 text-3xl mb-4`}>
+                <h3 className={`font-bold text-gray-500 opacity-70 text-3xl mb-4`}>
                     {about_me_texts.tittle2}
                 </h3>
-                <p className="text-2xl text-gray-950 dark:text-gray-300">
+                <p className="text-2xl text-gray-300">
                     {about_me_texts.text}
                 </p>
             </div>

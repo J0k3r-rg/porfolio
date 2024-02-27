@@ -8,7 +8,7 @@ export default function FooterComponent(){
                 <TbPointFilled size={32} />
                 <TbPointFilled size={32} />
             </div>
-            <hr className={`h-2 dark:bg-rose-500 w-5/12 border-0`} />
+            <hr className={`h-1 dark:bg-rose-500 w-5/12 border-0`} />
         </footer>
     );
 }

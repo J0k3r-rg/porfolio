@@ -11,7 +11,7 @@ export default function HeaderComponent({ links, locale }) {
     return (
         <header className={`flex flex-row h-32 items-center justify-between px-9`}>
 
-            <hr className={`h-2 bg-white border-0 w-4/12 my-auto`} />
+            <hr className={`h-1 bg-white border-0 w-4/12 my-auto`} />
 
             <nav>
                 <ul className={`flex flex-row pr-14 gap-8`}>
