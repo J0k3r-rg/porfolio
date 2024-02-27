@@ -3,6 +3,7 @@ import spring from '@/app/UI/assets/springdatajpa.png';
 import eggnews from '@/app/UI/assets/eggnews.png';
 import battlebame from '@/app/UI/assets/battlegame.png';
 import testapp from '@/app/UI/assets/testapp.png'
+import appsalud from '@/app/UI/assets/appSalud.png'
 
 export const all_projects = [
     {
@@ -42,7 +43,7 @@ export const all_projects = [
         name_en : "App Services Medic",
         url : null,
         github : 'https://github.com/J0k3r-rg/AppServiciosDeSalud',
-        image : spring,
+        image : appsalud,
         alt : 'servicios salud',
         tecnologies : ['Java', 'MySQL','SpringDataJpa', 'Thymeleaft','Html','Css','Javascript']
     },{

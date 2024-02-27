@@ -17,9 +17,9 @@ export default function RootLayout({ children,params : {locale} }) {
   const t = useTranslations();
   const links_header_dict = [ "index", "about", "skills", "projects", "academy", "contact" ]
 
-  const links = links_header_dict.map(link => {
+  const links = links_header_dict.map((link, index) => {
     return {
-      name: t(`header.links.${link}.name`), path: locale + "/" + t(`header.links.${link}.path`)
+      name: t(`header.links.${link}.name`), path: '/'+ locale + (index != 0 ? '/' : '') + t(`header.links.${link}.path`)
     }
   })
 
@@ -29,7 +29,7 @@ export default function RootLayout({ children,params : {locale} }) {
         <HeaderComponent links={links} locale={locale} />
         {children}
         <Configs />
-        <FooterComponent />
+        <FooterComponent locale={locale} />
       </body>
     </html>
   );

@@ -8,11 +8,11 @@
         "links" : {
             "index" : {
                 "name" : "Home",
-                "path" : "/"
+                "path" : ""
             },
             "skills" : {
                 "name" : "Skills",
-                "path" : "/skills"
+                "path" : "skills"
             },
             "about" : {
                 "name" : "About me",
