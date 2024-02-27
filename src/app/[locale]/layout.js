@@ -32,7 +32,7 @@ export default function RootLayout({ children,params : {locale} }) {
   return (
     <html lang={locale} className="dark">
       <body className={`${inter.className} bg-[#242020] w-screen h-screen`}>
-        <HeaderComponent links={links} locale={locale} />
+        <HeaderComponent links={links} locale={locale} texts_configs={texts_configs}/>
         {children}
         <Configs texts_configs={texts_configs}/>
         <FooterComponent locale={locale} />

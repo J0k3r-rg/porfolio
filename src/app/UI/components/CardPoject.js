@@ -35,7 +35,7 @@ export default function CardProject({ project, locale, projects_home_texts, sele
                     <Image src={project.image} alt={project.alt} className='lg:w-8/12 w-full m-auto shadow-lg shadow-rose-400' />
                 </div>
             </div>
-            <div className={`${index != selected ? 'hidden' : ''} md:hidden`}>
+            <div className={`${index != selected ? 'hidden' : 'block'} md:hidden`}>
                 <h3 className="w-11/12 text-rose-300 m-auto text-center z-10 py-6 text-3xl font-bold mt-32 ">
                     {locale === 'es' ? project.name_es : project.name_en}
                 </h3>

@@ -26,7 +26,7 @@ export default function SwitchLang({ text }) {
 
     return (
         <div className="py-1">
-            <h3 className="font-bold text-2xl text-white mb-4">{text}</h3>
+            <h3 className="font-bold text-xl md:text-2xl text-white mb-4">{text}</h3>
             <div className='flex justify-center'>
                 <button
                     className="flex flex-row text-gray-950 dark:text-slate-300"

@@ -14,7 +14,7 @@ export default function About(){
     }
 
     return(
-        <main className="w-full grid lg:h-[calc(100%_-_128px_-_96px)] place-content-center">
+        <main className="w-full m-auto grid lg:h-[calc(100%_-_128px_-_96px)] place-content-center">
             <AboutMe about_me_texts={about_me_texts} />
         </main>
     );

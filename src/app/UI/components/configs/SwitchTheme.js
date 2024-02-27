@@ -25,7 +25,7 @@ export default function SwitchTheme({themedark, themelight}) {
     }
     return (
         <div>
-            <h3 className="font-bold text-2xl text-center text-white mb-4">
+            <h3 className="font-bold text-xl md:text-2xl text-center text-white mb-4">
                 {theme === 'dark' ? themelight : themedark}
             </h3>
             <div className={`flex p-1 w-20 m-auto rounded-full bg-slate-500 border-2 border-gray-950`}>

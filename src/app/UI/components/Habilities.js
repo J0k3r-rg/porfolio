@@ -8,7 +8,7 @@ import React from "react";
 export default function Habilities() {
 
     const configIcon = {
-        size : 90,
+        size : '100%',
     }
 
     const icons = [
@@ -58,11 +58,11 @@ export default function Habilities() {
     return (
         <section className={`w-11/12 lg:w-6/12`}>
             <div 
-                className={`grid lg:grid-cols-5 md:grid-cols-4 grid-cols-4 place-content-center gap-y-6`}
+                className={`grid md:grid-cols-10 lg:grid-cols-5 grid-cols-6 place-content-center gap-6`}
                 >
                 {
                     icons.map( (icon,index) =>
-                        <div key={index} className={`${index%2 === 0 ? 'text-rose-500' : 'text-white'} grid place-content-center m-auto`}>
+                        <div key={index} className={`${index%2 === 0 ? 'text-rose-500' : 'text-white'} lg:w-1/2 grid place-content-center m-auto`}>
                             {icon.icon}
                         </div>
                     )
