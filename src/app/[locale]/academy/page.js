@@ -7,7 +7,7 @@ export default function page({ params : {locale} }) {
 
 
     return (
-        <main className="w-10/12 m-auto grid place-content-center lg:h-[calc(100%_-_128px_-_96px)]">
+        <main className="w-11/12 m-auto grid place-content-center lg:h-[calc(100%_-_128px_-_96px)]">
             <ul className={`grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-5 [&>*:nth-child(4n+1)]:text-rose-500 [&>*:nth-child(4n)]:text-rose-500 [&>*:nth-child(2n)]:text-white [&>*:nth-child(2n+1)]:text-white`}>
                 {
                     certificates.map((certificates, index) =>

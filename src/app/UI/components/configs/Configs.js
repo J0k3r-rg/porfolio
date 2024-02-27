@@ -9,7 +9,7 @@ export default function Configs({texts_configs}) {
     const [openConfigs, setOpenConfigs] = useState(true)
 
     return (
-        <div className="fixed bottom-12 right-12 z-50">
+        <div className="fixed bottom-32 right-2 md:bottom-12 md:right-12 z-50">
             <div 
                 className={`cursor-pointer bg-rose-500 flex place-content-center p-2 rounded-full w-fit drop-shadow-[3px_3px_25px_rgba(0,0,255,0.6)] opacity-40`}
                 onClick={() => setOpenConfigs(!openConfigs)}

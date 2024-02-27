@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import logo from '@/app/UI/assets/fondo.png'
 
-
 export default function Home() {
 
   return (
@@ -14,6 +13,7 @@ export default function Home() {
         <p className={`text-center font-bold  text-6xl lg:text-8xl text-white opacity-50`}>DEVELOPER FULL</p>
         <p className={`text-center font-bold  text-6xl lg:text-8xl text-white opacity-50`}>STACK</p>
       </div>
+      
     </main>
   );
 }
