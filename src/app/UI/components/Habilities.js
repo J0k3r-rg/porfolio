@@ -2,15 +2,11 @@ import * as FontAwesomeFa from 'react-icons/fa';
 import * as FontAwesomeTb from 'react-icons/tb';
 import * as FontAwesomeSi from 'react-icons/si';
 import * as FontAwesomeDi from 'react-icons/di';
-import {Dosis} from 'next/font/google'
 import React from "react";
 
-const abril = Dosis({ 
-    weight: '400',
-    subsets: ["latin"] 
-  });
 
-export default function Habilities({habilities_texts}) {
+
+export default function Habilities() {
 
     const configIcon = {
         size : 90,

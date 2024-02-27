@@ -13,7 +13,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children,params : {locale} }) {
-  
 
   const t = useTranslations();
   const links_header_dict = [ "index", "about", "skills", "projects", "academy", "contact" ]
