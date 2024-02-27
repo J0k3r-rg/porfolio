@@ -1,12 +1,10 @@
 import { certificates } from "@/app/UI/certificates";
-import { useLocale } from "next-intl"
 import CardCourse from "@/app/UI/components/CardCourse";
 import Image from 'next/image'
 import logo from '@/app/UI/assets/fondo.png'
 
-export default function page() {
+export default function page({ children,params : {locale} }) {
 
-    const locale = useLocale()
 
     return (
         <main className="w-10/12 m-auto grid place-content-center h-[calc(100%_-_128px_-_96px)]">
