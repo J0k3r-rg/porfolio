@@ -3,7 +3,7 @@ import CardCourse from "@/app/UI/components/CardCourse";
 import Image from 'next/image'
 import logo from '@/app/UI/assets/fondo.png'
 
-export default function page({ children,params : {locale} }) {
+export default function page({ params : {locale} }) {
 
 
     return (
