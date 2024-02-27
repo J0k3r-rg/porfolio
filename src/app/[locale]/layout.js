@@ -16,7 +16,7 @@ export default function RootLayout({ children,params : {locale} }) {
   
 
   const t = useTranslations();
-  const links_header_dict = [ "index", "about", "projects" ]
+  const links_header_dict = [ "index", "about", "skills", "projects", "academy", "contact" ]
 
   const links = links_header_dict.map(link => {
     return {
@@ -26,7 +26,7 @@ export default function RootLayout({ children,params : {locale} }) {
 
   return (
     <html lang={locale} className="dark">
-      <body className={inter.className+' bg-gray-300 dark:bg-gray-950'}>
+      <body className={`${inter.className} bg-[#242020] w-screen h-screen`}>
         <HeaderComponent links={links} locale={locale} />
         {children}
         <Configs />

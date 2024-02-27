@@ -1,6 +1,6 @@
 'use client'
 import { useState, useEffect } from "react";
-import { MdDarkMode, MdLightMode } from "react-icons/md";
+import { MdLightMode, MdDarkMode } from "react-icons/md";
 
 export default function SwitchTheme() {
     const [theme, setTheme] = useState(() => {

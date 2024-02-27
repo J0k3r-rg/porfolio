@@ -10,6 +10,10 @@
                 "name" : "Home",
                 "path" : "/"
             },
+            "skills" : {
+                "name" : "Skills",
+                "path" : "/skills"
+            },
             "about" : {
                 "name" : "About me",
                 "path" : "about"
@@ -17,6 +21,14 @@
             "projects" : {
                 "name" : "My Projects",
                 "path" : "projects"
+            },
+            "contact" : {
+                "name" : "Contact me",
+                "path" : "contact"
+            },
+            "academy" : {
+                "name" : "Academy",
+                "path" : "academy"
             }
         }
     },
@@ -26,7 +38,8 @@
     ,
     "home_page" : {
         "about_me_section" : {
-            "tittle" : "About me...",
+            "tittle" : "About me",
+            "tittle2" : "DEVELOPER FULL STACK JAVA | SPRING | MYSQL | MONGODB | REACT | NEXTJS",
             "text" : "Soy Programador full stack en Java con el framework Spring, Mysql y React, pero me estoy dedicando mas a la construcción de API Rest con Spring y aumentando mis conocimientos con la arquitectura de microservicios. Mi preferencia es el Backend pero también tengo amplio conocimiento en Frontend con HTML5, CSS3 y JavaScript. Manejo librerías como React y Nexjs, conociendo las ventajas de cada una de ellas, y el manejador de paquetes NPM. Actualmente me encuentro desarrollando aplicaciones monolíticas mediante API Rest, utilizando como backend el framework Spring de Java (17) y consumiendo dicho backend con Nextjs 14. ",
             "more" : "show more...",
             "pd" : "PD:",

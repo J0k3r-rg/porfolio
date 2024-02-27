@@ -1,9 +1,14 @@
+import { TbPointFilled } from "react-icons/tb";
 
 export default function FooterComponent(){
     return(
-        <footer className={`h-24 flex flex-col items-center w-11/12 mt-10 m-auto text-gray-950 dark:text-gray-300`}>
-            <hr className="w-full pb-8" />
-            <h3 className="text-2xl font-bold">Portfolio Mauricio Maldonado</h3>
+        <footer className={`h-24 absolute bottom-0 flex flex-row items-center w-10/12 m-auto justify-between`}>
+            <div className={`flex flex-row text-white`}>
+                <TbPointFilled size={32} />
+                <TbPointFilled size={32} />
+                <TbPointFilled size={32} />
+            </div>
+            <hr className={`h-2 dark:bg-rose-500 w-5/12 border-0`} />
         </footer>
     );
 }

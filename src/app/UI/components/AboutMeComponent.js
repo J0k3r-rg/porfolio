@@ -1,6 +1,7 @@
 import { Dosis } from "next/font/google";
 import Image from "next/image";
 import avatar from '@/app/UI/assets/avatar.jpeg';
+import logo from '@/app/UI/assets/fondo.png'
 import Link from 'next/link';
 import * as IconsFa from "react-icons/fa";
 import React from "react";
@@ -29,30 +30,29 @@ const redes = [
     }
 ]
 
-export default function AboutMe({about_me_texts,locale}) {
+export default function AboutMe({ about_me_texts, locale }) {
     return (
-        <section className={`border-2 border-cyan-800 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] dark:border-cyan-300 dark:shadow-[0_35px_60px_-15px_rgba(255,255,255,0.3)] px-12 py-10 rounded-lg flex flex-col bg-transparent dark:bg-transparent`}>
-            <h2 className={`text-center text-4xl font-bold text-gray-950 dark:text-gray-300 mb-6`}>{about_me_texts.tittle}</h2>
-            <div className={`flex flex-col md:flex-row justify-center items-center gap-6  ${dosis.className}`}>
-                <Image src={avatar} alt="avatar" className={`rounded-full `} width={250} />
-                <p className="text-2xl text-gray-950 dark:text-gray-300">
-                    {about_me_texts.text} 
-                    <Link href={`/${locale}/about`} className="text-blue-900 dark:text-blue-500 hover:scale-110 transition-all duration-300 ">
-                        {about_me_texts.more}
-                    </Link> 
-                </p>
-            </div>  
-            <div className={`flex flex-row gap-5 justify-center pt-5 text-gray-950 dark:text-gray-400`}>
-                {
-                    redes.map(icon => <Link href={icon.link} target='_blank' key={icon.link}>{icon.icon}</Link>)
-                }
+        <section className={`flex flex-row h-full w-10/12 m-auto gap-12`}>
+
+            <div className={`w-4/12`}>
+                <Image src={avatar} className={`w-full rounded-full`} alt="avatar" />
             </div>
-            <p className="text-center mt-4 text-gray-950 dark:text-gray-500">
-                <span className="font-bold">
-                    {about_me_texts.pd} 
-                </span>
-                {about_me_texts.pd_text}
-            </p>
+
+            <div className={`flex flex-col w-8/12  ${dosis.className}`}>
+                <div className={`fixed w-full`}>
+                    <Image className={`w-6/12 drop-shadow-[3px_3px_25px_rgba(0,0,255,0.6)] opacity-40`} src={logo} alt="logo" />
+                </div>
+                <h2 className={`text-center text-8xl font-bold uppercase mb-4 dark:text-rose-500`}>
+                    {about_me_texts.tittle}
+                </h2>
+                <h3 className={`font-bold dark:text-gray-500 opacity-70 text-3xl mb-4`}>
+                    {about_me_texts.tittle2}
+                </h3>
+                <p className="text-2xl text-gray-950 dark:text-gray-300">
+                    {about_me_texts.text}
+                </p>
+            </div>
+
         </section>
     )
 }
