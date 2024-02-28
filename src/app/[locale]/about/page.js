@@ -14,7 +14,7 @@ export default function About(){
     }
 
     return(
-        <main className="w-11/12 lg:w-10/12 m-auto grid min-h-[calc(100vh_-_128px_-_80px)] place-content-center">
+        <main className="w-11/12 lg:w-10/12 pb-24 md:pb-0 m-auto grid min-h-[calc(100vh_-_128px_-_80px)] place-content-center">
             <AboutMe about_me_texts={about_me_texts} />
         </main>
     );
