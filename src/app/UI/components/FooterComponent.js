@@ -25,7 +25,7 @@ export default function FooterComponent({locale}){
                 :
                 <div className={`w-full flex justify-between items-center`}>
                     <MdMoreHoriz size={80} color="white"/>
-                    <hr className={`border-0 h-1 w-40 bg-rose-300 `} />
+                    <hr className={`border-0 h-1 w-40 lg:w-[600px] bg-rose-300 `} />
                 </div>
 
             }
