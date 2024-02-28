@@ -15,7 +15,7 @@ export default function Projects() {
       }
 
     return (
-        <main className="lg:w-11/12 w-full m-auto flex flex-col lg:h-[calc(100%_-_128px_-_96px)]">
+        <main className="lg:w-11/12 w-full m-auto flex flex-col min-h-[calc(100vh_-_128px_-_80px)]">
             <h2 className={`text-4xl text-rose-400 font-bold text-center`}>
                 {projects_texts.tittle}
             </h2>

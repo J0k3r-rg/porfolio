@@ -56,7 +56,7 @@ export default function Habilities() {
     ];
     
     return (
-        <section className={`w-11/12 lg:w-6/12`}>
+        <section className={`w-11/12 m-auto lg:w-6/12`}>
             <div 
                 className={`grid md:grid-cols-10 lg:grid-cols-5 grid-cols-6 place-content-center gap-6`}
                 >

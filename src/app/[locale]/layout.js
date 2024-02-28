@@ -31,7 +31,7 @@ export default function RootLayout({ children,params : {locale} }) {
 
   return (
     <html lang={locale} className="dark">
-      <body className={`${inter.className} bg-[#242020] lg:w-screen lg:h-screen flex flex-col`}>
+      <body className={`${inter.className} bg-[#242020] min-h-screen relative`}>
         <HeaderComponent links={links} locale={locale} texts_configs={texts_configs}/>
         {children}
         <FooterComponent locale={locale} />

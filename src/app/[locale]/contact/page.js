@@ -20,22 +20,22 @@ export default function Page() {
 
 
     return (
-        <main className="flex m-auto flex-col lg:h-[calc(100%_-_128px_-_96px)] w-11/12 lg:w-8/12">
-            <h2 className={`text-4xl text-center mb-5 font-bold text-rose-400 uppercase`}>Contactame</h2>
+        <main className="flex m-auto flex-col min-h-[calc(100vh_-_128px_-_80px)] w-11/12 lg:w-8/12">
+            <h2 className={`text-3xl text-center mb-5 font-bold text-rose-400 uppercase`}>Contactame</h2>
             <div className={`flex m-auto w-full h-full flex-row justify-between`}>
                 <div className={`hidden w-full md:flex flex-col justify-center items-center gap-y-60`}>
                     <FaLinkedin size={50} />
                     <FaGithub size={50} />
                 </div>
-                <form action={formAction} className={`flex flex-col gap-5 w-full`}>
+                <form action={formAction} className={`flex w-full flex-col gap-5`}>
                     <input type="email" name="to" placeholder={`Email: *`} required
-                        className={`border-0 h-12 rounded-3xl px-6 py-2 font-bold text-2xl bg-gray-300 bg-opacity-35`}
+                        className={`border-0 h-11 rounded-3xl px-6 py-2 w-96 font-bold text-xl bg-gray-300 bg-opacity-35`}
                     />
                     <input type="text" name="name" placeholder={`Nombre: *`} required
-                        className={`border-0 h-12 rounded-3xl px-6 py-2 font-bold text-2xl bg-gray-300 bg-opacity-35`}
+                        className={`border-0 h-11 rounded-3xl px-6 py-2 w-96 font-bold text-xl bg-gray-300 bg-opacity-35`}
                     />
                     <textarea name="body" cols={30} rows={7} placeholder={`Mensaje: * `} required
-                        className={`border-0 h-64 rounded-3xl px-6 py-4 resize-none font-bold text-2xl bg-gray-300 bg-opacity-35`}
+                        className={`border-0 h-56 rounded-3xl px-6 py-4 w-96 resize-none font-bold text-xl bg-gray-300 bg-opacity-35`}
                     ></textarea>
                     <button
                         onClick={() => setSending(true)}
