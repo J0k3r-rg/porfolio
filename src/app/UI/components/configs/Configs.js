@@ -14,7 +14,7 @@ export default function Configs({texts_configs}) {
                 className={`cursor-pointer bg-rose-500 flex place-content-center p-2 rounded-full w-fit drop-shadow-[3px_3px_25px_rgba(0,0,255,0.6)] opacity-40`}
                 onClick={() => setOpenConfigs(!openConfigs)}
             >
-                <IoMdSettings className={`md:w-10 md:h-10 lg:h-16 lg:w-16`} />
+                <IoMdSettings className={`md:w-10 md:h-10 lg:h-12 lg:w-12`} />
             </div>
             <div className={`${openConfigs && 'hidden'} fixed lg:bottom-32 md:bottom-14 px-8 py-6 flex gap-6 flex-col rounded-xl right-12 bg-black bg-opacity-80`}>
                 <SwitchTheme themelight={texts_configs.themelight} themedark={texts_configs.themedark} />

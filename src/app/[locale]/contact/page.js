@@ -1,8 +1,7 @@
 'use client'
 import Image from 'next/image'
 import { useFormState } from 'react-dom'
-import { FaLinkedin, FaGithub, FaCopyright } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import ClipLoader from "react-spinners/ClipLoader";
 import { useState } from 'react'
 import logo from '@/app/UI/assets/fondo.png'
@@ -52,16 +51,6 @@ export default function Page() {
 
             <div className={`fixed w-full h-full top-0 grid place-content-center -z-50`}>
                 <Image className={`lg:w-7/12 w-full m-auto drop-shadow-[3px_3px_25px_rgba(0,0,255,0.6)] opacity-40`} src={logo} alt="logo" />
-            </div>
-            <div className={`absolute bottom-5 flex flex-col gap-2 text-rose-400`}>
-                <div className={`flex flex-row gap-5`}>
-                    <FaCopyright size={25} /> <p>Todos los derechos reservados. Desarrollado por Mauricio Maldonado. 2024</p>
-                </div>
-                <div className={`flex flex-row gap-4 justify-center text-rose-400`}>
-                    <p>Web Design por Carla González</p>
-                    <AiFillInstagram size={25} />
-                    <FaLinkedin size={25} />
-                </div>
             </div>
             {
                 sending &&

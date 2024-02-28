@@ -5,7 +5,7 @@ import logo from '@/app/UI/assets/fondo.png'
 export default function pageSkills() {
 
     return (
-        <main className={`flex flex-col lg:flex-row lg:h-[calc(100%_-_128px_-_96px)] items-center justify-center`}>
+        <main className={`md:w-11/12 lg:w-10/12 m-auto flex flex-col lg:flex-row lg:h-[calc(100%_-_128px_-_96px)] items-center justify-center`}>
             <h3 className={`lg:hidden text-4xl text-center text-rose-500 font-bold mb-10`}>Skills</h3>
             <Habilities />
             <div className={`hidden w-6/12 relative lg:flex  lg:h-[calc(100%_-_128px_-_96px)]`}>

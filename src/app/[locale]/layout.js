@@ -31,11 +31,11 @@ export default function RootLayout({ children,params : {locale} }) {
 
   return (
     <html lang={locale} className="dark">
-      <body className={`${inter.className} bg-[#242020] w-screen h-screen`}>
+      <body className={`${inter.className} bg-[#242020] lg:w-screen lg:h-screen flex flex-col`}>
         <HeaderComponent links={links} locale={locale} texts_configs={texts_configs}/>
         {children}
-        <Configs texts_configs={texts_configs}/>
         <FooterComponent locale={locale} />
+        <Configs texts_configs={texts_configs}/>
       </body>
     </html>
   );
