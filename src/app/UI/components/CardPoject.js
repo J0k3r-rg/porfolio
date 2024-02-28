@@ -8,7 +8,7 @@ export default function CardProject({ project, locale, projects_home_texts, sele
 
     return (
         <>
-            <div className={`top-5 lg:top-auto transition-all duration-300 ease-out grid place-content-center absolute ${(index === selected) ? 'w-full z-10' : (index === ant) ? `lg:mr-80` : (index === pos) ? `lg:ml-80` : 'hidden'}`}>
+            <div className={`relative h-56 overflow-hidden rounded-lg md:h-96 ease-in-out duration-700 ${(index === selected) ? '': 'hidden'}`}>
                 <div className="relative text-transparent group">
                     <div className={`w-full h-full hidden group-hover:text-white lg:grid lg:place-content-center absolute ${index != selected ? 'hidden' : ''}`} >
                         <div className={`w-11/12 m-auto px-5 group-hover:bg-[rgba(0,0,0,0.5)]`}>

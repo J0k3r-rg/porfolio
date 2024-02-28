@@ -21,9 +21,9 @@ export default function CarrouselProjects({ projects_texts, locale }) {
     }
 
     return (
-        <div className={`lg:h-full md:h-96 h-52 w-full`}>
-            <div className={`flex flex-row content-center h-52 md:h-96 lg:h-full justify-between lg:px-8`}>
-                <div className={`w-12 lg:w-[100px] grid place-content-center`}>
+        <div className={``}>
+            <div id="default-carousel" className={`relative w-full *:transition-all duration-500 ease-in-out`}>
+                <div className={`absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none`}>
                     <FaAngleLeft size={50} onClick={down} className={`text-rose-500 ${selected === 0 ? 'hidden' : 'cursor-pointer'} hover:scale-125 transition-all ease-out`} />
                 </div>
                 <div className={`w-full flex flex-row items-center justify-center relative`}>
@@ -38,11 +38,10 @@ export default function CarrouselProjects({ projects_texts, locale }) {
                         )
                     }
                 </div>
-                <div className={`w-12 lg:w-[100px] grid place-content-center`}>
+                <div className={`absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none`}>
                     <FaAngleRight size={50} onClick={up} className={`text-rose-500 ${selected === 5 ? 'hidden' : 'cursor-pointer'} hover:scale-125 transition-all ease-out`} />
                 </div>
             </div>
-
             <div className={`lg:hidden`}>
                 <h3 className="w-11/12 text-rose-300 m-auto text-center z-10 py-6 text-3xl font-bold">
                     {locale === 'es' ? showDataSelected.name_es : showDataSelected.name_en}
