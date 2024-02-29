@@ -32,10 +32,19 @@ export default function RootLayout({ children,params : {locale} }) {
   return (
     <html lang={locale} className="dark">
       <head>
-        <meta property="og:tittle" content="J0k3r-dev freelanzer" />
+        <meta property="og:url" content="https://mauriciomaldonadoprg.com.ar" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="J0K3R-Dev portfolio personal" />
         <meta property="og:description" content="J0k3r-dev freelanzer full stack [[ Java | Spring | MYSQL | Reactjs ]] Nextjs | MongoDB | Python" />
-        <meta property="og:image" content="https://i.imgur.com/PyAXnSw.jpg" /> 
-        <meta property="og:imgage:alt" content="logo mio" />
+        <meta property="og:image" content="https://i.imgur.com/PyAXnSw.jpg" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="mauriciomaldonadoprg.com.ar" />
+        <meta property="twitter:url" content="https://mauriciomaldonadoprg.com.ar" />
+        <meta name="twitter:title" content="J0K3R-Dev portfolio personal" />
+        <meta name="twitter:description" content="J0k3r-dev freelanzer full stack [[ Java | Spring | MYSQL | Reactjs ]] Nextjs | MongoDB | Python" />
+        <meta name="twitter:image" content="https://i.imgur.com/PyAXnSw.jpg" />
+
       </head>
       <body className={`${inter.className} bg-[#242020] min-h-screen relative`}>
         <HeaderComponent links={links} locale={locale} texts_configs={texts_configs}/>
