@@ -34,7 +34,7 @@ export default function RootLayout({ children,params : {locale} }) {
       <head>
         <meta property="og:tittle" content="J0k3r-dev freelanzer" />
         <meta property="og:description" content="J0k3r-dev freelanzer full stack [[ Java | Spring | MYSQL | Reactjs ]] Nextjs | MongoDB | Python" />
-        <meta property="og:img" content="logo.png" /> 
+        <meta property="og:img" content="../UI/assets/fondo.png" /> 
         <meta property="og:img:alt" content="logo mio" />
       </head>
       <body className={`${inter.className} bg-[#242020] min-h-screen relative`}>
