@@ -41,13 +41,13 @@ export default function AboutMe({ about_me_texts, locale }) {
                 <div className={`fixed w-full -z-10 top-0 h-full grid place-content-center`}>
                     <Image className={`lg:w-6/12 w-full drop-shadow-[3px_3px_25px_rgba(0,0,255,0.6)] opacity-40`} src={logo} alt="logo" />
                 </div>
-                <h2 className={`text-center text-4xl md:text-4xl lg:text-8xl font-bold uppercase mb-4 text-rose-500`}>
+                <h2 className={`text-center text-4xl md:text-4xl lg:text-8xl font-bold uppercase mb-4 text-[#000033] dark:text-rose-500`}>
                     {about_me_texts.tittle}
                 </h2>
-                <h3 className={`font-bold text-gray-500 opacity-70 text-xl md:text-xl lg:text-3xl mb-4`}>
+                <h3 className={`font-bold text-[#000033] dark:text-gray-500 opacity-70 text-xl md:text-xl lg:text-3xl mb-4`}>
                     {about_me_texts.tittle2}
                 </h3>
-                <p className="text-xl md:text-xl text-gray-300">
+                <p className="text-xl md:text-xl text-[#000044] dark:text-gray-300">
                     {about_me_texts.text}
                 </p>
             </div>

@@ -16,7 +16,7 @@ export default function Projects() {
 
     return (
         <main className="lg:w-11/12 w-full m-auto flex flex-col min-h-[calc(100vh_-_128px_-_80px)]">
-            <h2 className={`text-4xl text-rose-400 font-bold text-center`}>
+            <h2 className={`text-4xl text-[#000033] dark:text-rose-400 font-bold text-center`}>
                 {projects_texts.tittle}
             </h2>
             <CarrouselProjects projects_texts={projects_texts} locale={locale} />

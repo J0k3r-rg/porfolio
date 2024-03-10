@@ -62,7 +62,7 @@ export default function Habilities() {
                 >
                 {
                     icons.map( (icon,index) =>
-                        <div key={index} className={`${index%2 === 0 ? 'text-rose-500' : 'text-white'} lg:w-1/2 grid place-content-center m-auto`}>
+                        <div key={index} className={`${index%2 === 0 ? 'text-[#000033] dark:text-rose-500' : 'text-[#9696ec] dark:text-white'} lg:w-1/2 grid place-content-center m-auto`}>
                             {icon.icon}
                         </div>
                     )

@@ -46,7 +46,7 @@ export default function RootLayout({ children,params : {locale} }) {
         <meta name="twitter:image" content="https://i.imgur.com/PyAXnSw.jpg" />
 
       </head>
-      <body className={`${inter.className} bg-[#242020] min-h-screen relative`}>
+      <body className={`${inter.className} bg-[#EDEDED] dark:bg-[#242020] min-h-screen relative transition-all duration-300`}>
         <HeaderComponent links={links} locale={locale} texts_configs={texts_configs}/>
         {children}
         <FooterComponent locale={locale} />
