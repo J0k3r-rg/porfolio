@@ -7,17 +7,19 @@ import Link from 'next/link'
 
 export default function CarrouselProjects({ projects_texts, locale }) {
 
+    const projects_length = all_projects.length-1
+
     const [selected, setSelected] = useState(1)
 
     let showDataSelected = all_projects[selected]
 
 
     const up = () => {
-        setSelected(selected === 5 ? 0 : selected + 1)
+        setSelected(selected === projects_length ? 0 : selected + 1)
     }
 
     const down = () => {
-        setSelected(selected === 0 ? 5 : selected - 1)
+        setSelected(selected === 0 ? projects_length : selected - 1)
     }
 
     return (
@@ -39,7 +41,7 @@ export default function CarrouselProjects({ projects_texts, locale }) {
                     }
                 </div>
                 <div className={`absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none`}>
-                    <FaAngleRight size={50} onClick={up} className={`text-[#000033] dark:text-rose-500 ${selected === 5 ? 'hidden' : 'cursor-pointer'} hover:scale-125 transition-all ease-out`} />
+                    <FaAngleRight size={50} onClick={up} className={`text-[#000033] dark:text-rose-500 ${selected === projects_length ? 'hidden' : 'cursor-pointer'} hover:scale-125 transition-all ease-out`} />
                 </div>
             </div>
             <div className={`lg:hidden`}>
